@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - IDPMI Honduras</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="img/logo.png" alt="Logo IDPMI Honduras">
+        <div class="brand-title">
+          <h1>Iglesia de Dios Pentecostal M.I.</h1>
+          <span>Región de Honduras</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Quiénes Somos</a></li>
+          <li><a href="directiva.html">Liderazgo</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <div class="page-title">
+      <h2>Contacto y Oficinas Nacionales</h2>
+      <p>Estamos para servirte. Envíanos tu mensaje o petición de oración.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Información de Oficina Central</h3>
+        <p style="margin-bottom: 0.75rem;"><strong>Dirección:</strong> Sede Nacional IDPMI, Tegucigalpa, Francisco Morazán, Honduras.</p>
+        <p style="margin-bottom: 0.75rem;"><strong>Teléfono Fijo:</strong> +504 2200-0000</p>
+        <p style="margin-bottom: 0.75rem;"><strong>WhatsApp Secretaria:</strong> +504 9900-0000</p>
+        <p style="margin-bottom: 0.75rem;"><strong>Correo Oficial:</strong> contacto@idpmihonduras.org</p>
+        
+        <h4 style="margin-top: 1.5rem; color: var(--primary);">Horarios de Atención:</h4>
+        <p>Lunes a Viernes: 8:00 AM - 4:00 PM<br>Sábados: 8:00 AM - 12:00 PM</p>
+      </div>
+
+      <div class="card">
+        <h3>Formulario de Mensajes</h3>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+504 0000-0000">
+          </div>
+          <div class="form-group">
+            <label for="asunto">Tipo de Mensaje:</label>
+            <select id="asunto" name="asunto">
+              <option value="consulta">Consulta General</option>
+              <option value="oracion">Petición de Oración</option>
+              <option value="directorio">Información sobre Iglesias</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje o Petición:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn" style="border: none; cursor: pointer;">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
