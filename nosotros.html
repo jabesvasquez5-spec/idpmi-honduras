@@ -4,18 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiénes Somos - IDPMI Honduras</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
+    .header-flex { display: flex; justify-content: space-between; align-items: center; }
+    .brand-title h1 { font-size: 1.3rem; color: #0f172a; }
+    .brand-title span { font-size: 0.85rem; color: #2563eb; font-weight: 600; }
+    nav ul { display: flex; list-style: none; gap: 20px; }
+    nav a { text-decoration: none; color: #475569; font-weight: 500; }
+    nav a.active { color: #2563eb; font-weight: 700; }
+    .hero { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: white; padding: 50px 0; text-align: center; }
+    .hero h2 { font-size: 2rem; margin-bottom: 10px; }
+    .hero p { font-size: 1rem; opacity: 0.9; }
+    .section-padding { padding: 40px 0; }
+    .card { background: white; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 40px; }
+  </style>
 </head>
 <body>
-
   <header>
-    <div class="container">
-      <div class="brand">
-        <img src="img/logo.png" alt="Logo IDPMI Honduras">
-        <div class="brand-title">
-          <h1>Iglesia de Dios Pentecostal M.I.</h1>
-          <span>Región de Honduras</span>
-        </div>
+    <div class="container header-flex">
+      <div class="brand-title">
+        <h1>Iglesia de Dios Pentecostal M.I.</h1>
+        <span>Región de Honduras</span>
       </div>
       <nav>
         <ul>
@@ -28,43 +42,38 @@
     </div>
   </header>
 
-  <main class="main-content container">
-    <div class="page-title">
-      <h2>Nuestra Identidad Institucional</h2>
-      <p>Conoce la trayectoria, pilares y valores de la obra pentecostal en Honduras.</p>
-    </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Nuestra Identidad e Historia</h2>
+        <p>Conoce los fundamentos espirituales y la visión de la IDPMI en la nación hondureña.</p>
+      </div>
+    </section>
 
-    <div class="grid-2" style="margin-bottom: 2rem;">
-      <div class="card">
-        <h3>Historia de la Iglesia</h3>
-        <p>La Iglesia de Dios Pentecostal Movimiento Internacional en Honduras tuvo sus inicios en el siglo XX, como fruto del movimiento misionero y la pasión por extender la sana doctrina. A través de las décadas, se ha consolidado en distritos y departamentos, sirviendo fielmente a las familias hondureñas.</p>
-      </div>
-      <div class="card">
-        <h3>Justificación</h3>
-        <p>En un contexto social complejo, la IDPMI en Honduras se levanta como un referente de restauración espiritual y ética, ofreciendo esperanza mediante el mensaje transformador de Jesucristo e invirtiendo en la niñez y la juventud.</p>
-      </div>
-    </div>
+    <section class="section-padding">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="color: #1e3a8a; margin-bottom: 12px;">Misión</h3>
+            <p>Predicar el evangelio transformador de Jesucristo a toda persona en Honduras, discipulando nuevos creyentes y plantando congregaciones locales sólidas bajo la guianza del Espíritu Santo.</p>
+          </div>
+          <div class="card">
+            <h3 style="color: #1e3a8a; margin-bottom: 12px;">Visión</h3>
+            <p>Ser un movimiento de fe pentecostal con presencia y cobertura espiritual en los 18 departamentos de Honduras, caracterizado por la evangelización, la acción social y la sana doctrina.</p>
+          </div>
+        </div>
 
-    <div class="grid-2" style="margin-bottom: 2rem;">
-      <div class="card">
-        <h3>Misión</h3>
-        <p>Predicar el evangelio de Jesucristo a toda criatura, discipular a los creyentes bajo la sana doctrina bíblica, plantar iglesias y brindar servicio integral a las comunidades de Honduras, impulsados por el poder del Espíritu Santo.</p>
+        <div class="card">
+          <h3 style="color: #1e3a8a; margin-bottom: 15px;">Nuestros Valores Fundamentales</h3>
+          <ul style="padding-left: 20px; line-height: 1.8;">
+            <li><strong>Fidelidad Bíblica:</strong> Basamos nuestra doctrina estrictamente en las Sagradas Escrituras.</li>
+            <li><strong>Unidad y Comunión:</strong> Fomentamos el amor fraternal y la fraternidad entre las congregaciones.</li>
+            <li><strong>Evangelismo Activo:</strong> Llevamos el mensaje de esperanza a comunidades urbanas y rurales.</li>
+            <li><strong>Integridad y Servicio:</strong> Modelamos una conducta cristiana fundamentada en la santidad y el servicio al prójimo.</li>
+          </ul>
+        </div>
       </div>
-      <div class="card">
-        <h3>Visión</h3>
-        <p>Ser un movimiento iglesia dinámico, unido y en constante expansión nacional e internacional, reconocido por su fidelidad a la Palabra de Dios, el impacto transformador en la sociedad y la formación de líderes de fe.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Valores Institucionales</h3>
-      <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
-        <li><strong>Fidelidad Bíblica:</strong> Compromiso innegociable con las Sagradas Escrituras.</li>
-        <li><strong>Santidad:</strong> Testimonio transparente en la vida personal y pública.</li>
-        <li><strong>Unidad:</strong> Hermandad y colaboración entre todas las congregaciones del país.</li>
-        <li><strong>Servicio con Excelencia:</strong> Administración diligente al servicio del Reino.</li>
-      </ul>
-    </div>
+    </section>
   </main>
 
   <footer>
@@ -72,6 +81,5 @@
       <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>
     </div>
   </footer>
-
 </body>
 </html>
