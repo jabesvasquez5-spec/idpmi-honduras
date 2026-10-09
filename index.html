@@ -30,7 +30,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
     }
+
+    /* ESTILOS PARA EL LOGO Y TÍTULO */
+    .brand-logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-img {
+      max-height: 55px; /* Ajusta la altura máxima según tus necesidades */
+      width: auto;
+      object-fit: contain;
+    }
+
     .brand-title h1 {
       font-size: 1.3rem;
       color: #0f172a;
@@ -107,9 +122,13 @@
 
   <header>
     <div class="container header-flex">
-      <div class="brand-title">
-        <h1>Iglesia de Dios Pentecostal M.I.</h1>
-        <span>Región de Honduras</span>
+      <div class="brand-logo-container">
+        <!-- REEMPLAZA "logo.png" POR LA RUTA DE TU LOGO -->
+        <img src="logo.png" alt="Logo IDPMI Honduras" class="logo-img">
+        <div class="brand-title">
+          <h1>Iglesia de Dios Pentecostal M.I.</h1>
+          <span>Región de Honduras</span>
+        </div>
       </div>
       <nav>
         <ul>
