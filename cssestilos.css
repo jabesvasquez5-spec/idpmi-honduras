@@ -516,54 +516,76 @@ footer {
 /* ===================================================
    DISEÑO EXACTO SECCIÓN CONTACTO (OFICINA NACIONAL)
    =================================================== */
+/* ===================================================
+   SECCIÓN CONTACTO (CUADROS CENTRADOS Y MÁS GRANDE)
+   =================================================== */
 
 .seccion-contacto-oficina {
-    max-width: 800px;
-    margin: 20px 0 40px 0;
+    max-width: 750px;
+    margin: 40px auto;
+    text-align: center;
 }
 
 .titulo-contacto-oficina {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.5rem; /* Título más grande */
     font-weight: 800;
     color: var(--dark-header, #1A1A1A);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .horario-destacado {
     color: #D92525;
-    font-size: 1.05rem;
+    font-size: 1.2rem; /* Horario más visible */
     font-weight: 700;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .bloque-contacto {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
+/* Tarjetas/Cuadros Individuales */
 .filas-contacto {
     display: flex;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-left: 6px solid #D92525;
+    border-radius: 8px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.filas-contacto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Íconos más grandes */
 .icono-mini {
-    font-size: 1.2rem;
-    line-height: 1.2;
-    margin-top: 2px;
+    font-size: 1.8rem;
+    line-height: 1;
 }
 
 .icono-mini.rojo { color: #D92525; }
 .icono-mini.verde { color: #25D366; }
-.icono-mini.morado { color: #D8B4FE; }
+.icono-mini.morado { color: #8B5CF6; }
+
+.datos-contacto {
+    text-align: left;
+}
 
 .datos-contacto h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.25rem; /* Subtítulos más grandes */
     font-weight: 700;
     color: var(--dark-header, #1A1A1A);
     margin-bottom: 4px;
@@ -571,7 +593,7 @@ footer {
 
 .datos-contacto a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Textos de enlaces más grandes */
     font-weight: 700;
     text-decoration: none;
     display: inline-block;
@@ -599,4 +621,22 @@ footer {
 
 .link-mail:hover {
     color: #D92525;
+}
+
+/* Adaptación para pantallas móviles */
+@media (max-width: 768px) {
+    .titulo-contacto-oficina {
+        font-size: 1.8rem;
+    }
+
+    .filas-contacto {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .datos-contacto {
+        text-align: center;
+    }
 }
