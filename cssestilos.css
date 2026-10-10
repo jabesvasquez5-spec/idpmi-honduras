@@ -247,79 +247,93 @@ body {
 /* ===================================================
    3. SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
    =================================================== */
+/* ===================================================
+   SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
+   =================================================== */
+
+.section-header {
+    margin-bottom: 40px;
+}
+
 .titulo-seccion-pagina {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--dark-header);
-  text-transform: uppercase;
-  margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
 }
 
 .subtitulo-seccion-pagina {
-  color: var(--text-muted);
-  font-size: 1rem;
-  margin-bottom: 40px;
+    color: #64748B;
+    font-size: 1rem;
 }
 
+/* Tarjetas para Visión, Misión y Justificación */
 .grid-identidad {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
-  margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
 }
 
 .card-identidad {
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-top: 4px solid var(--red-main);
-  border-radius: 6px;
-  padding: 30px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card-identidad:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-top: 4px solid #D92525;
+    border-radius: 6px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .card-identidad h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--dark-header);
-  margin-bottom: 12px;
-  text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
-/* CUADRÍCULA LIMPIA DE VALORES (SOLO TÍTULOS) */
-.grid-valores-solos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 15px;
-  margin-top: 25px;
+.card-identidad p {
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-.card-valor-simple {
-  background-color: var(--bg-light);
-  border: 1px solid var(--border-light);
-  border-left: 4px solid var(--red-main);
-  padding: 16px;
-  text-align: center;
-  border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--dark-header);
-  text-transform: uppercase;
-  transition: all 0.2s ease;
+/* Cuadrícula de Cuadros de Valores (Solo Títulos) */
+.seccion-valores {
+    margin-top: 40px;
 }
 
-.card-valor-simple:hover {
-  background-color: #FFFFFF;
-  border-color: var(--red-main);
-  box-shadow: var(--shadow-sm);
+.grid-valores-cuadros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.box-valor {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-left: 5px solid #D92525;
+    border-radius: 6px;
+    padding: 18px 12px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box-valor:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 /* ===================================================
