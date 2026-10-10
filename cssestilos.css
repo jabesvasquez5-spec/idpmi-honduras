@@ -126,83 +126,117 @@ body {
    2. PORTADA BAYSIDE STYLE (INDEX.HTML)
    =================================================== */
 .hero-bayside {
-  position: relative;
-  min-height: 80vh;
-  background-image: url('capensi.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #FFFFFF;
+    position: relative;
+    min-height: 85vh;
+    background-image: url('capensi.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    180deg, 
-    rgba(0, 0, 0, 0.45) 0%, 
-    rgba(0, 0, 0, 0.75) 100%
-  );
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 40px 20px;
-  max-width: 950px;
-  margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.frame-box {
-  display: inline-block;
-  border: 3px solid #FFFFFF;
-  padding: 16px 45px;
-  margin-bottom: 25px;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
+/* Recuadro de Bienvenidos Más Grande */
+.frame-box-grande {
+    display: inline-block;
+    border: 4px solid #FFFFFF;
+    padding: 22px 65px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3px);
 }
 
-.frame-box h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #FFFFFF;
-  margin: 0;
-  line-height: 1;
+.frame-box-grande h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1;
 }
 
-.versiculo-hero {
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: #F8FAFC;
-  font-style: italic;
-  font-weight: 400;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
-  max-width: 880px;
-  margin: 0 auto;
+/* Versículo en Orden */
+.versiculo-bloque {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.cita-hero {
-  display: block;
-  margin-top: 12px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #FFFFFF;
-  font-style: normal;
-  font-size: 1.05rem;
-  letter-spacing: 1px;
+.texto-versiculo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
+.cita-versiculo {
+    display: block;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* ===================================================
+   FOOTER (PIE DE PÁGINA)
+   =================================================== */
+
+.footer-principal {
+    background-color: #1A1A1A;
+    color: #CCCCCC;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 1px solid #2A2A2A;
+}
+
+/* Adaptación para Celulares */
+@media (max-width: 768px) {
+    .frame-box-grande {
+        padding: 14px 30px;
+        border-width: 3px;
+    }
+
+    .frame-box-grande h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+    }
+
+    .texto-versiculo {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
 /* ===================================================
    3. SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
    =================================================== */
