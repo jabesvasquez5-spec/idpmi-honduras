@@ -127,10 +127,13 @@ body {
    =================================================== */
 
 
+/* ===================================================
+   ESTILOS EXCLUSIVOS PARA PORTADA (INDEX.HTML)
+   =================================================== */
+
 /* Contenedor principal de la portada unido al pie de página */
 .hero-bayside {
   position: relative;
-  /* Calcula la altura exacta para eliminar cualquier espacio en blanco inferior */
   min-height: calc(100vh - 130px);
   background-image: url('capensi.jpg');
   background-position: center center;
@@ -161,26 +164,26 @@ body {
   position: relative;
   z-index: 2;
   padding: 30px 20px;
-  max-width: 1050px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 /* Recuadro MÁS GRANDE para "BIENVENIDOS" */
 .frame-box-grande {
   display: inline-block;
-  border: 4px solid #FFFFFF;
-  padding: 22px 75px;
-  margin-bottom: 25px;
-  background-color: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(3px);
+  border: 5px solid #FFFFFF;
+  padding: 26px 90px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
 }
 
 .frame-box-grande h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
+  font-size: 5.2rem; /* Tamaño de letra más grande */
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   color: #FFFFFF;
   margin: 0;
   line-height: 1;
@@ -188,13 +191,13 @@ body {
 
 /* Versículo estructurado en orden */
 .versiculo-bloque {
-  max-width: 950px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 .texto-versiculo {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.8;
   color: #FFFFFF;
   font-style: italic;
@@ -209,7 +212,7 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   letter-spacing: 1px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
@@ -230,13 +233,13 @@ body {
 /* Responsivo para pantallas pequeñas y móviles */
 @media (max-width: 768px) {
   .frame-box-grande {
-    padding: 14px 30px;
+    padding: 14px 25px;
     border-width: 3px;
   }
 
   .frame-box-grande h1 {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
   }
 
   .texto-versiculo {
@@ -246,9 +249,6 @@ body {
 }
 /* ===================================================
    3. SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
-   =================================================== */
-/* ===================================================
-   SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
    =================================================== */
 
 .section-header {
