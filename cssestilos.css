@@ -458,3 +458,90 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 }
+/* ===================================================
+   DISEÑO EXACTO SECCIÓN CONTACTO (OFICINA NACIONAL)
+   =================================================== */
+
+.seccion-contacto-oficina {
+    max-width: 800px;
+    margin: 20px 0 40px 0;
+}
+
+.titulo-contacto-oficina {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--dark-header, #1A1A1A);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.horario-destacado {
+    color: #D92525;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.bloque-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filas-contacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.icono-mini {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-top: 2px;
+}
+
+.icono-mini.rojo { color: #D92525; }
+.icono-mini.verde { color: #25D366; }
+.icono-mini.morado { color: #D8B4FE; }
+
+.datos-contacto h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-header, #1A1A1A);
+    margin-bottom: 4px;
+}
+
+.datos-contacto a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-tel {
+    color: #1A1A1A;
+}
+
+.link-tel:hover {
+    color: #D92525;
+}
+
+.link-wa {
+    color: #128C7E;
+}
+
+.link-wa:hover {
+    color: #25D366;
+}
+
+.link-mail {
+    color: #1A1A1A;
+}
+
+.link-mail:hover {
+    color: #D92525;
+}

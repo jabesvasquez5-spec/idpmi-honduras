@@ -1,35 +1,79 @@
-<main class="container section-padding">
-    <div class="contacto-card-oficina">
-        <h2 class="titulo-contacto">INFORMACIÓN OFICINA NACIONAL</h2>
-        <p class="horario-contacto">Horario: Lunes a Viernes 8:30 a.m. – 3:30 p.m.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Iglesia de Dios Pentecostal M.I. Honduras</title>
+    <link rel="stylesheet" href="cssestilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        <div class="lista-contacto">
-            <!-- Teléfono Fijo -->
-            <div class="item-contacto">
-                <span class="icono-contacto">📞</span>
-                <div>
-                    <h3>Teléfono Fijo</h3>
-                    <a href="tel:+50422307477" class="enlace-contacto">+504 2230-7477</a>
+    <!-- Encabezado Superior Institucional -->
+    <header class="header-principal">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="logomi.png" alt="Logo IDPMI" class="logo-img">
+                <div class="texto-logo">
+                    <h1 class="titulo-organizacion">IGLESIA DE DIOS PENTECOSTAL M.I.</h1>
+                    <span class="subtitulo-organizacion">REGIÓN DE HONDURAS</span>
                 </div>
-            </div>
+            </a>
 
-            <!-- WhatsApp Directo -->
-            <div class="item-contacto">
-                <span class="icono-contacto verde">💬</span>
-                <div>
-                    <h3>WhatsApp Directo</h3>
-                    <a href="https://wa.me/50487777980" target="_blank" class="enlace-contacto verde-link">+504 8777-7980</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">QUIÉNES SOMOS</a></li>
+                    <li><a href="directiva.html">LIDERAZGO</a></li>
+                    <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido de Contacto con el Diseño Original -->
+    <main class="container section-padding">
+        <div class="seccion-contacto-oficina">
+            <h2 class="titulo-contacto-oficina">INFORMACIÓN OFICINA NACIONAL</h2>
+            <p class="horario-destacado">Horario: Lunes a Viernes 8:30 a.m. – 3:30 p.m.</p>
+
+            <div class="bloque-contacto">
+                <!-- Teléfono Fijo -->
+                <div class="filas-contacto">
+                    <span class="icono-mini rojo">📞</span>
+                    <div class="datos-contacto">
+                        <h3>Teléfono Fijo</h3>
+                        <a href="tel:+50422307477" class="link-tel">+504 2230-7477</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Correo Electrónico -->
-            <div class="item-contacto">
-                <span class="icono-contacto">✉</span>
-                <div>
-                    <h3>Correo Electrónico</h3>
-                    <a href="mailto:idpmihonduras@yahoo.es" class="enlace-contacto">idpmihonduras@yahoo.es</a>
+                <!-- WhatsApp Directo -->
+                <div class="filas-contacto">
+                    <span class="icono-mini verde">💬</span>
+                    <div class="datos-contacto">
+                        <h3>WhatsApp Directo</h3>
+                        <a href="https://wa.me/50487777980" target="_blank" class="link-wa">+504 8777-7980</a>
+                    </div>
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="filas-contacto">
+                    <span class="icono-mini morado">✉</span>
+                    <div class="datos-contacto">
+                        <h3>Correo Electrónico</h3>
+                        <a href="mailto:idpmihonduras@yahoo.es" class="link-mail">idpmihonduras@yahoo.es</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
