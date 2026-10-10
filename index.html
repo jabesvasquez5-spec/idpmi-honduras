@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iglesia de Dios Pentecostal M.I. - Región de Honduras</title>
     <link rel="stylesheet" href="cssestilos.css">
-    <!-- Fuente moderna e íconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Encabezado y Navegación Principal -->
-    <header class="main-header">
-        <div class="top-nav">
-            <div class="logo-container">
-                <img src="logomi.png" alt="Logo IDPMI Honduras" class="logo">
-                <div class="logo-text">
-                    <h1>IGLESIA DE DIOS PENTECOSTAL M.I.</h1>
-                    <span>REGIÓN DE HONDURAS</span>
+    <!-- 1. ENCABEZADO SUPERIOR BLANCO (Header exacto de tus otras páginas) -->
+    <header class="header-principal">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="logomi.png" alt="Logo IDPMI" class="logo-img">
+                <div class="texto-logo">
+                    <h1 class="titulo-organizacion">IGLESIA DE DIOS PENTECOSTAL M.I.</h1>
+                    <span class="subtitulo-organizacion">REGIÓN DE HONDURAS</span>
                 </div>
-            </div>
-            <nav class="nav-links">
+            </a>
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html" class="active">INICIO</a></li>
-                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="nosotros.html">QUIÉNES SOMOS</a></li>
                     <li><a href="directiva.html">LIDERAZGO</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
@@ -32,27 +32,33 @@
         </div>
     </header>
 
-    <!-- Sección Hero (Portada Estilo Bayside) -->
-    <section class="hero-section">
+    <!-- 2. PORTADA HERO BAYSIDE CON FONDO CAPENSI.JPG -->
+    <section class="hero-bayside">
         <div class="hero-overlay"></div>
-        <!-- Imagen de fondo que puedes cambiar -->
-        <img src="capensi.jpg" alt="Portada IDPMI Honduras" class="hero-bg">
-        
+
         <div class="hero-content">
-            <div class="hero-box">
-                <h2>REGIÓN DE HONDURAS</h2>
+            <!-- Recuadro Blanco Estilo Bayside -->
+            <div class="frame-box">
+                <h1>BIENVENIDOS</h1>
             </div>
-            <p class="hero-subtitle">Unidos en fe, proclamando el evangelio a nuestra nación</p>
-            
-            <div class="hero-buttons">
-                <a href="nosotros.html" class="btn btn-outline">CONÓCENOS</a>
-                <a href="contacto.html" class="btn btn-primary">CONTACTAR</a>
+
+            <!-- Versículo de Id y Predicar -->
+            <p class="versiculo-hero">
+                "Y les dijo: Id por todo el mundo y predicad el evangelio a toda criatura."
+                <span class="cita-hero">— Marcos 16:15</span>
+            </p>
+
+            <!-- Botones de Navegación Rápida -->
+            <div class="hero-action-buttons">
+                <a href="nosotros.html" class="btn-hero btn-secondary">CONÓCENOS</a>
+                <a href="directiva.html" class="btn-hero btn-secondary">NUESTRO LIDERAZGO</a>
+                <a href="contacto.html" class="btn-hero btn-primary">CONTÁCTANOS</a>
             </div>
         </div>
 
-        <!-- Barra inferior tipo reproducción / En vivo -->
+        <!-- Barra Inferior Transmisiones en Vivo -->
         <div class="hero-bottom-bar">
-            <a href="#" class="live-link">
+            <a href="contacto.html" class="live-link">
                 <span class="play-icon">▶</span>
                 <strong>IDPMI Honduras Online</strong> | ¡Únete a nuestras transmisiones en vivo!
             </a>
@@ -61,12 +67,3 @@
 
 </body>
 </html>
-
-  <!-- Sección Hero / Banner Principal -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-box">
-        <h2>BIENVENIDOS AL PORTAL NACIONAL</h2>
-      </div>
-      <blockquote class="verse">
-        <p>“Por tanto, id, y haced discíp

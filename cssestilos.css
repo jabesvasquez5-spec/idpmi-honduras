@@ -11,7 +11,6 @@
   --border-light: #E5E5E5;
 }
 
-/* Corrección del selector universal */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,12 +29,6 @@ body {
   margin: 0 auto;
   padding: 0 24px;
 }
-
-.section-padding {
-  padding: 70px 0;
-}
-
-.text-center { text-align: center; }
 
 /* 1. ENCABEZADO SUPERIOR BLANCO */
 .header-principal {
@@ -64,6 +57,11 @@ body {
   height: 52px;
   width: auto;
   object-fit: contain;
+}
+
+.texto-logo {
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo-organizacion {
@@ -105,7 +103,7 @@ body {
   color: var(--red-main);
 }
 
-/* 2. HERO BAYSIDE STYLE (MEJORADO) */
+/* 2. PORTADA BAYSIDE STYLE CON CAPENSI.JPG DE FONDO */
 .hero-bayside {
   position: relative;
   min-height: 85vh;
@@ -128,10 +126,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle, 
-    rgba(0, 0, 0, 0.4) 0%, 
-    rgba(0, 0, 0, 0.8) 100%
+  background: linear-gradient(
+    180deg, 
+    rgba(0, 0, 0, 0.45) 0%, 
+    rgba(0, 0, 0, 0.75) 100%
   );
   z-index: 1;
 }
@@ -144,20 +142,19 @@ body {
   margin: 0 auto;
 }
 
-/* MARCO TIPO BAYSIDE CHURCH */
+/* Recuadro Blanco de Título "BIENVENIDOS" */
 .frame-box {
   display: inline-block;
   border: 3px solid #FFFFFF;
-  padding: 22px 50px;
+  padding: 18px 45px;
   margin-bottom: 25px;
-  background-color: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
 }
 
 .frame-box h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -166,60 +163,92 @@ body {
   line-height: 1;
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  color: #F1F1F1;
-  font-weight: 300;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-}
-
-/* VERSÍCULO Y CITA */
+/* Estilo del Versículo */
 .versiculo-hero {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #F8FAFC;
   font-style: italic;
   font-weight: 400;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
   max-width: 850px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
 .cita-hero {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #FFFFFF;
+  font-style: normal;
   font-size: 1rem;
   letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 
-/* BARRA INFERIOR DE TRANSMISIÓN / BAYSIDE STYLE */
+/* Botones de Acción de la Portada */
+.hero-action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-hero {
+  padding: 12px 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-secondary {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #FFFFFF;
+  color: var(--dark-header);
+}
+
+.btn-primary {
+  background-color: var(--red-main);
+  color: #FFFFFF;
+  border: 2px solid var(--red-main);
+}
+
+.btn-primary:hover {
+  background-color: var(--red-hover);
+  border-color: var(--red-hover);
+}
+
+/* Barra Inferior Transmisión / En vivo */
 .hero-bottom-bar {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(18, 18, 18, 0.9);
-  padding: 16px 20px;
+  background: rgba(26, 26, 26, 0.92);
+  padding: 14px 20px;
   z-index: 2;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
 }
 
 .live-link {
   color: #FFFFFF;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   transition: opacity 0.2s ease;
 }
 
@@ -233,230 +262,40 @@ body {
   justify-content: center;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  font-size: 0.75rem;
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
   padding-left: 2px;
 }
 
-/* 3. FRANJA ROJA DESTACADA */
-.franja-roja {
-  background-color: var(--red-main);
-  color: #FFFFFF;
-  padding: 35px 0;
-}
-
-.grid-franja {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.col-franja {
-  padding: 0 20px;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.col-franja:last-child {
-  border-right: none;
-}
-
-.col-franja h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-
-.col-franja p {
-  font-size: 0.9rem;
-  opacity: 0.95;
-  line-height: 1.5;
-}
-
-/* 4. SECCIONES Y TARJETAS GENERALES */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 30px;
-}
-
-.card-blanca {
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
-  padding: 35px 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-}
-
-.card-blanca h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--dark-header);
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* 5. VALORES SEPARADOS INDIVIDUALMENTE */
-.grid-valores {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.card-valor {
-  background-color: var(--bg-light);
-  border: 1px solid var(--border-light);
-  border-top: 4px solid var(--red-main);
-  padding: 25px 20px;
-  text-align: center;
-  border-radius: 4px;
-  transition: transform 0.2s ease;
-}
-
-.card-valor:hover {
-  transform: translateY(-4px);
-}
-
-.card-valor h4 {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--dark-header);
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.card-valor p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-/* 6. LIDERAZGO / COMITÉ EJECUTIVO */
-.grid-liderazgo {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.card-lider {
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
-  padding: 20px;
-  text-align: center;
-  transition: box-shadow 0.2s ease;
-}
-
-.card-lider:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.foto-lider {
-  width: 120px;
-  height: 145px;
-  object-fit: cover;
-  border-radius: 2px;
-  margin-bottom: 12px;
-  background-color: #E2E8F0;
-  border: 1px solid var(--border-light);
-}
-
-.nombre-lider {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--dark-header);
-  margin-bottom: 4px;
-}
-
-.cargo-lider {
-  font-size: 0.8rem;
-  color: var(--red-main);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-/* CONTACTO Y BANCOS */
-.card-banco {
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-top: 4px solid var(--red-main);
-  padding: 25px;
-  border-radius: 4px;
-}
-
-.numero-cuenta {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--dark-header);
-  margin-top: 5px;
-}
-
-/* FOOTER */
-footer {
-  background-color: var(--dark-header);
-  color: #888888;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 80px;
-  font-size: 0.85rem;
-}
-
-/* RESPONSIVO PARA CELULARES */
+/* Responsive para Celulares */
 @media (max-width: 768px) {
   .hero-bayside {
-    min-height: 70vh;
+    min-height: 75vh;
   }
-  
+
   .frame-box {
-    padding: 14px 22px;
-    border-width: 2px;
+    padding: 12px 25px;
   }
-  
+
   .frame-box h1 {
     font-size: 1.8rem;
     letter-spacing: 2px;
   }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
 
   .versiculo-hero {
     font-size: 0.95rem;
-    line-height: 1.6;
+    margin-bottom: 20px;
   }
 
-  .col-franja {
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
 
-  .col-franja:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
-
-  .hero-bottom-bar {
-    padding: 12px 10px;
-  }
-
-  .live-link {
-    font-size: 0.8rem;
+  .btn-hero {
+    width: 100%;
   }
 }
