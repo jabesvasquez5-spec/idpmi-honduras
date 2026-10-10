@@ -11,7 +11,7 @@
   --border-light: #E5E5E5;
 }
 
-- {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -230,19 +230,6 @@ body {
   line-height: 1.5;
 }
 
-/* ESTILOS DE DERECHOS RESERVADOS AGREGADOS */
-.footer-derechos {
-  background-color: var(--dark-bg);
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer-derechos p {
-  color: #888888;
-  font-size: 0.85rem;
-  margin: 0;
-}
-
 /* 4. SECCIONES Y TARJETAS GENERALES */
 .grid-3 {
   display: grid;
@@ -372,7 +359,7 @@ body {
   margin-top: 5px;
 }
 
-/* FOOTER GENERAL */
+/* FOOTER */
 footer {
   background-color: var(--dark-header);
   color: #888888;
