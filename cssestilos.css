@@ -125,106 +125,124 @@ body {
 /* ===================================================
    2. PORTADA BAYSIDE STYLE (INDEX.HTML)
    =================================================== */
-/* ===================================================
-   PORTADA PRINCIPAL AJUSTADA AL PANTALLAZO
-   =================================================== */
 
+
+/* Contenedor principal de la portada unido al pie de página */
 .hero-bayside {
-    position: relative;
-    /* Ajusta la altura para que el footer quede exactamente visible abajo */
-    height: calc(100vh - 125px); 
-    min-height: 520px;
-    background-image: url('capensi.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #FFFFFF;
+  position: relative;
+  /* Calcula la altura exacta para eliminar cualquier espacio en blanco inferior */
+  min-height: calc(100vh - 130px);
+  background-image: url('capensi.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
+/* Capa oscura de sobreposición sobre la imagen */
 .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
 }
 
+/* Contenido central superpuesto */
 .hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-    max-width: 950px;
-    margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 30px 20px;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-/* Recuadro de Bienvenidos */
+/* Recuadro MÁS GRANDE para "BIENVENIDOS" */
 .frame-box-grande {
-    display: inline-block;
-    border: 3px solid #FFFFFF;
-    padding: 16px 50px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
+  display: inline-block;
+  border: 4px solid #FFFFFF;
+  padding: 22px 75px;
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
 }
 
 .frame-box-grande h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #FFFFFF;
-    margin: 0;
-    line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1;
 }
 
-/* Versículo */
+/* Versículo estructurado en orden */
 .versiculo-bloque {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .texto-versiculo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #FFFFFF;
-    font-style: italic;
-    font-weight: 400;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 .cita-versiculo {
-    display: block;
-    margin-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #FFFFFF;
-    font-style: normal;
-    font-size: 1.05rem;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  display: block;
+  margin-top: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-/* ===================================================
-   FOOTER (PIE DE PÁGINA PEGADO ABAJO)
-   =================================================== */
-
+/* Pie de página unido sin espacio superior */
 .footer-principal {
-    background-color: #1A1A1A;
-    color: #CCCCCC;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 0.85rem;
-    font-family: 'Open Sans', sans-serif;
-    border-top: 1px solid #2A2A2A;
-    width: 100%;
+  background-color: #1A1A1A;
+  color: #CCCCCC;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.85rem;
+  font-family: 'Open Sans', sans-serif;
+  border-top: 1px solid #2A2A2A;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Responsivo para pantallas pequeñas y móviles */
+@media (max-width: 768px) {
+  .frame-box-grande {
+    padding: 14px 30px;
+    border-width: 3px;
+  }
+
+  .frame-box-grande h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .texto-versiculo {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
 /* ===================================================
    3. SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
