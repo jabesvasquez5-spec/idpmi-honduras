@@ -3,95 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - IDPMI Honduras</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
-    .header-flex { display: flex; justify-content: space-between; align-items: center; }
-    .brand-title h1 { font-size: 1.3rem; color: #0f172a; }
-    .brand-title span { font-size: 0.85rem; color: #2563eb; font-weight: 600; }
-    nav ul { display: flex; list-style: none; gap: 20px; }
-    nav a { text-decoration: none; color: #475569; font-weight: 500; }
-    nav a.active { color: #2563eb; font-weight: 700; }
-    .hero { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: white; padding: 50px 0; text-align: center; }
-    .hero h2 { font-size: 2rem; margin-bottom: 10px; }
-    .hero p { font-size: 1rem; opacity: 0.9; }
-    .section-padding { padding: 40px 0; }
-    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-    .card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; }
-    .form-group { margin-bottom: 15px; }
-    .form-group label { display: block; margin-bottom: 5px; font-weight: 600; color: #334155; }
-    .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.95rem; }
-    .btn { background: #2563eb; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; width: 100%; }
-    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 40px; }
-  </style>
+  <title>Contacto y Sede | IDPMI Honduras</title>
+  <link rel="icon" type="image/png" href="logomi.png">[cite: 5]
+  <link rel="stylesheet" href="cssestilos.css">[cite: 5]
 </head>
 <body>
-  <header>
-    <div class="container header-flex">
-      <div class="brand-title">
-        <h1>Iglesia de Dios Pentecostal M.I.</h1>
-        <span>Región de Honduras</span>
-      </div>
-      <nav>
+
+  <!-- ENCABEZADO -->
+  <header class="header-principal">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <img src="logomi.png" alt="Logo IDPMI Honduras" class="logo-img">[cite: 5]
+        <div class="logo-texto">
+          <span class="titulo-organizacion">Iglesia de Dios Pentecostal M.I.</span>
+          <span class="subtitulo-organizacion">Región de Honduras</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="directiva.html">Liderazgo</a></li>
-          <li><a href="contacto.html" class="active">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="directiva.html">Comité Ejecutivo</a></li>
+          <li><a href="contacto.html" class="active">Contacto y Sede</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Ponte en Contacto con Nosotros</h2>
-        <p>Envíanos tus consultas, peticiones de oración o correspondencia oficial.</p>
+  <main class="section-padding">
+    <div class="container">
+      <h2 class="text-center" style="color: #0d47a1;">Información Oficina Nacional</h2>[cite: 3]
+      
+      <div class="text-center margin-top">
+        <span class="badge-horario"><strong>Horario:</strong> Lunes a Viernes 8:30 a.m. – 3:30 p.m.</span>[cite: 3]
       </div>
-    </section>
 
-    <section class="section-padding">
-      <div class="container">
-        <div class="grid-2">
-          <div class="card">
-            <h3 style="color: #1e3a8a; margin-bottom: 15px;">Información Directa</h3>
-            <p style="margin-bottom: 10px;"><strong>📍 Dirección:</strong> Oficinas Centrales Ejecutivas, Tegucigalpa, Honduras</p>
-            <p style="margin-bottom: 10px;"><strong>📞 Teléfono:</strong> +504 2200-0000</p>
-            <p style="margin-bottom: 10px;"><strong>✉️ Correo Electrónico:</strong> contacto@idpmihonduras.org</p>
-            <p style="margin-bottom: 10px;"><strong>🕒 Atención:</strong> Lunes a Viernes (8:00 AM – 4:00 PM)</p>
+      <!-- CANALES DE CONTACTO -->
+      <div class="grid-3 margin-top">
+        <div class="card text-center">
+          <h4 style="color: #005f73; margin-bottom: 8px;">📞 Teléfono Fijo</h4>
+          <a href="tel:+50422307477" style="font-size: 1.1rem; text-decoration: none; color: #1a1a1a; font-weight: bold;">+504 2230-7477</a>[cite: 3]
+        </div>
+
+        <div class="card text-center">
+          <h4 style="color: #27ae60; margin-bottom: 8px;">💬 WhatsApp Directo</h4>
+          <a href="https://wa.me/50487777980" target="_blank" style="font-size: 1.1rem; text-decoration: none; color: #1a1a1a; font-weight: bold;">+504 8777-7980</a>[cite: 3]
+        </div>
+
+        <div class="card text-center">
+          <h4 style="color: #0d47a1; margin-bottom: 8px;">✉️ Correo Electrónico</h4>
+          <a href="mailto:idpmihonduras@yahoo.es" style="font-size: 1rem; text-decoration: none; color: #1a1a1a; font-weight: bold;">idpmihonduras@yahoo.es</a>[cite: 3]
+        </div>
+      </div>
+
+      <!-- RTN INSTITUCIONAL -->
+      <div class="card margin-top text-center" style="background-color: #f4f8ff; border-top-color: #0d47a1;">
+        <h3 style="color: #0d47a1;">RTN Nacional</h3>
+        <p style="font-size: 1.6rem; color: #c0392b; font-weight: bold; margin: 5px 0;">08019995321850</p>[cite: 3]
+        <p><strong>Iglesia de Dios Pentecostal Movimiento Internacional en Honduras</strong></p>[cite: 3]
+      </div>
+
+      <!-- CUENTAS BANCARIAS -->
+      <div class="margin-top">
+        <h3 class="text-center" style="color: #0d47a1; margin-bottom: 10px;">🏦 Cuentas Bancarias</h3>
+        <p class="text-center">Cuenta de cheques a nombre de: <strong>Iglesia de Dios Pentecostal M.I.</strong></p>[cite: 3]
+        
+        <div class="grid-2 margin-top">
+          <div class="card bank-card atlantida">
+            <h4 style="color: #c0392b;">Banco Atlántida</h4>
+            <p class="account-number">#11-0002278-7</p>[cite: 3]
           </div>
 
-          <div class="card">
-            <h3 style="color: #1e3a8a; margin-bottom: 15px;">Formulario de Mensaje / Petición</h3>
-            <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente.');">
-              <div class="form-group">
-                <label>Nombre Completo</label>
-                <input type="text" required placeholder="Tu nombre">
-              </div>
-              <div class="form-group">
-                <label>Correo Electrónico / Teléfono</label>
-                <input type="text" required placeholder="Contacto">
-              </div>
-              <div class="form-group">
-                <label>Mensaje o Petición de Oración</label>
-                <textarea rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
-              </div>
-              <button type="submit" class="btn">Enviar Mensaje</button>
-            </form>
+          <div class="card bank-card occidente">
+            <h4 style="color: #27ae60;">Banco de Occidente</h4>
+            <p class="account-number">#11-701-001068-9</p>[cite: 3]
           </div>
         </div>
       </div>
-    </section>
+
+    </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>[cite: 1]
     </div>
   </footer>
+
 </body>
 </html>

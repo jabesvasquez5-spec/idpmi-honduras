@@ -3,86 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liderazgo - IDPMI Honduras</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
-    .header-flex { display: flex; justify-content: space-between; align-items: center; }
-    .brand-title h1 { font-size: 1.3rem; color: #0f172a; }
-    .brand-title span { font-size: 0.85rem; color: #2563eb; font-weight: 600; }
-    nav ul { display: flex; list-style: none; gap: 20px; }
-    nav a { text-decoration: none; color: #475569; font-weight: 500; }
-    nav a.active { color: #2563eb; font-weight: 700; }
-    .hero { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: white; padding: 50px 0; text-align: center; }
-    .hero h2 { font-size: 2rem; margin-bottom: 10px; }
-    .hero p { font-size: 1rem; opacity: 0.9; }
-    .section-padding { padding: 40px 0; }
-    .card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .avatar { width: 90px; height: 90px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 15px auto; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #2563eb; }
-    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 40px; }
-  </style>
+  <title>Comité Ejecutivo | IDPMI Honduras</title>
+  <link rel="icon" type="image/png" href="logomi.png">[cite: 5]
+  <link rel="stylesheet" href="cssestilos.css">[cite: 5]
 </head>
 <body>
-  <header>
-    <div class="container header-flex">
-      <div class="brand-title">
-        <h1>Iglesia de Dios Pentecostal M.I.</h1>
-        <span>Región de Honduras</span>
-      </div>
-      <nav>
+
+  <!-- ENCABEZADO -->
+  <header class="header-principal">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <img src="logomi.png" alt="Logo IDPMI Honduras" class="logo-img">[cite: 5]
+        <div class="logo-texto">
+          <span class="titulo-organizacion">Iglesia de Dios Pentecostal M.I.</span>
+          <span class="subtitulo-organizacion">Región de Honduras</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="directiva.html" class="active">Liderazgo</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="directiva.html" class="active">Comité Ejecutivo</a></li>
+          <li><a href="contacto.html">Contacto y Sede</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Cuerpo Directivo y Ejecutivo</h2>
-        <p>Servidores guiando el avance de la obra nacional en la Región de Honduras.</p>
-      </div>
-    </section>
+  <main class="section-padding">
+    <div class="container">
+      <h2 class="text-center" style="color: #0d47a1;">Comité Ejecutivo Región de Honduras</h2>[cite: 4]
+      <p class="text-center" style="color: #666; margin-bottom: 30px;">Liderazgo Oficial</p>
 
-    <section class="section-padding">
-      <div class="container">
-        <div class="grid-3">
-          <div class="card">
-            <div class="avatar">✝</div>
-            <h3 style="color: #0f172a;">Obispo / Presbítero General</h3>
-            <p style="color: #2563eb; font-weight: 600; margin-bottom: 10px;">Supervisión Nacional</p>
-            <p style="font-size: 0.9rem; color: #64748b;">Encargado del cuidado pastoral y la dirección estratégica de las obras locales en el país.</p>
-          </div>
-
-          <div class="card">
-            <div class="avatar">📋</div>
-            <h3 style="color: #0f172a;">Secretario Regional</h3>
-            <p style="color: #2563eb; font-weight: 600; margin-bottom: 10px;">Administración y Actas</p>
-            <p style="font-size: 0.9rem; color: #64748b;">Coordinación institucional, registros oficiales y comunicación entre distritos.</p>
-          </div>
-
-          <div class="card">
-            <div class="avatar">📊</div>
-            <h3 style="color: #0f172a;">Tesorero Regional</h3>
-            <p style="color: #2563eb; font-weight: 600; margin-bottom: 10px;">Gestión Financiera</p>
-            <p style="font-size: 0.9rem; color: #64748b;">Supervisión del mayordomía financiera y proyectos de expansión nacional.</p>
-          </div>
+      <!-- TARJETAS DE INTEGRANTES DEL COMITÉ EJECUTIVO -->
+      <div class="grid-directiva">
+        
+        <div class="card-miembro">
+          <img src="ulises.png" alt="José Ulises Palacios" class="foto-miembro">
+          <div class="nombre-miembro">José Ulises Palacios</div>[cite: 4]
+          <div class="cargo-miembro">Obispo Regional</div>[cite: 4]
         </div>
+
+        <div class="card-miembro">
+          <img src="carlos.png" alt="Carlos Enrique Pineda" class="foto-miembro">
+          <div class="nombre-miembro">Carlos Enrique Pineda</div>[cite: 4]
+          <div class="cargo-miembro">Vicepresidente 1</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="emerson.png" alt="Emerson Josué Miranda" class="foto-miembro">
+          <div class="nombre-miembro">Emerson Josué Miranda</div>[cite: 4]
+          <div class="cargo-miembro">Vicepresidente 2</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="orlando.png" alt="Orlando Antonio Madrid" class="foto-miembro">
+          <div class="nombre-miembro">Orlando Antonio Madrid</div>[cite: 4]
+          <div class="cargo-miembro">Secretario</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="ines.png" alt="Inés Vicente Oliva" class="foto-miembro">
+          <div class="nombre-miembro">Inés Vicente Oliva</div>[cite: 4]
+          <div class="cargo-miembro">Tesorero</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="marvin.png" alt="Marvin Javier Martínez" class="foto-miembro">
+          <div class="nombre-miembro">Marvin Javier Martínez</div>[cite: 4]
+          <div class="cargo-miembro">Subsecretario</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="cesar.png" alt="César Omar Amador" class="foto-miembro">
+          <div class="nombre-miembro">César Omar Amador</div>[cite: 4]
+          <div class="cargo-miembro">Subtesorero</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="miguel.png" alt="Miguel Ángel Reyes" class="foto-miembro">
+          <div class="nombre-miembro">Miguel Ángel Reyes</div>[cite: 4]
+          <div class="cargo-miembro">Vocal I y Director Depto. Misiones</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="leonel.png" alt="Leonel Alexander Osorto" class="foto-miembro">
+          <div class="nombre-miembro">Leonel Alexander Osorto</div>[cite: 4]
+          <div class="cargo-miembro">Vocal II</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="oscar.png" alt="Oscar Urbina Sambulá" class="foto-miembro">
+          <div class="nombre-miembro">Oscar Urbina Sambulá</div>[cite: 4]
+          <div class="cargo-miembro">Vocal III</div>[cite: 4]
+        </div>
+
+        <div class="card-miembro">
+          <img src="jose.png" alt="José A. Galindo" class="foto-miembro">
+          <div class="nombre-miembro">José A. Galindo</div>[cite: 4]
+          <div class="cargo-miembro">Vocal IV</div>[cite: 4]
+        </div>
+
       </div>
-    </section>
+    </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>[cite: 1]
     </div>
   </footer>
+
 </body>
 </html>

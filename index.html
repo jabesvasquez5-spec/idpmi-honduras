@@ -3,182 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iglesia de Dios Pentecostal M.I. - Honduras</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background-color: #f8fafc;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e2e8f0;
-      padding: 15px 0;
-    }
-    .header-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    /* ESTILOS PARA EL LOGO Y TÍTULO */
-    .brand-logo-container {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .logo-img {
-      max-height: 55px; /* Ajusta la altura máxima según tus necesidades */
-      width: auto;
-      object-fit: contain;
-    }
-
-    .brand-title h1 {
-      font-size: 1.3rem;
-      color: #0f172a;
-    }
-    .brand-title span {
-      font-size: 0.85rem;
-      color: #2563eb;
-      font-weight: 600;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #475569;
-      font-weight: 500;
-    }
-    nav a.active {
-      color: #2563eb;
-      font-weight: 700;
-    }
-    .hero {
-      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.2rem;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 25px auto;
-      opacity: 0.9;
-    }
-    .btn {
-      display: inline-block;
-      background: #ffffff;
-      color: #2563eb;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .section-padding {
-      padding: 40px 0;
-    }
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      margin-bottom: 20px;
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    footer {
-      background: #0f172a;
-      color: #94a3b8;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Portal Nacional | Iglesia de Dios Pentecostal M.I. Honduras</title>
+  <link rel="icon" type="image/png" href="logomi.png">
+  <link rel="stylesheet" href="cssestilos.css">
 </head>
 <body>
 
-  <header>
-    <div class="container header-flex">
-      <div class="brand-logo-container">
-        <!-- REEMPLAZA "logo.png" POR LA RUTA DE TU LOGO -->
+  <!-- ENCABEZADO PRO CON LOGO Y NAVEGACIÓN -->
+  <header class="header-principal">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
         <img src="logomi.png" alt="Logo IDPMI Honduras" class="logo-img">
-        <div class="brand-title">
-          <h1>Iglesia de Dios Pentecostal M.I.</h1>
-          <span>Región de Honduras</span>
+        <div class="logo-texto">
+          <span class="titulo-organizacion">Iglesia de Dios Pentecostal M.I.</span>[cite: 6]
+          <span class="subtitulo-organizacion">Región de Honduras</span>[cite: 6]
         </div>
-      </div>
-      <nav>
+      </a>
+      <nav class="nav-menu">
         <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="directiva.html">Liderazgo</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" class="active">Inicio</a></li>[cite: 6]
+          <li><a href="nosotros.html">Quiénes Somos</a></li>[cite: 6]
+          <li><a href="directiva.html">Liderazgo</a></li>[cite: 6]
+          <li><a href="contacto.html">Contacto</a></li>[cite: 6]
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO / BANNER PRINCIPAL PRO -->
     <section class="hero">
       <div class="container">
         <h2>Bienvenidos al Portal Nacional</h2>
-        <p>Proclamando el evangelio de Jesucristo e impactando la nación hondureña con el poder del Espíritu Santo.</p>
-        <a href="contacto.html" class="btn">Enviar Petición de Oración</a>
+        <p>Proclamando el evangelio de Jesucristo e impactando la nación hondureña con el poder del Espíritu Santo.</p>[cite: 1]
+        <a href="contacto.html" class="btn">Peticiones y Atención</a>
       </div>
     </section>
 
+    <!-- SECCIÓN NUESTRA MISIÓN -->
     <section class="section-padding">
       <div class="container">
-        <div class="card" style="text-align: center;">
-          <h3 style="color: #1e3a8a; margin-bottom: 10px;">Nuestra Misión</h3>
-          <p>Predicar el evangelio a toda criatura, discipular creyentes y plantar iglesias fortalecidas en todo el territorio hondureño.</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3 style="margin-bottom: 15px;">Horario de Atención</h3>
-            <p><strong>Lunes a Viernes:</strong> 8:00 AM – 4:00 PM</p>
-            <p><strong>Sábados:</strong> 8:00 AM – 12:00 PM</p>
-            <p><strong>Domingos:</strong> Servicios en congregaciones locales</p>
-          </div>
-
-          <div class="card">
-            <h3 style="margin-bottom: 15px;">Sede Nacional</h3>
-            <p><strong>Oficinas Centrales Ejecutivas</strong></p>
-            <p>Ubicación: Tegucigalpa, Honduras</p>
-            <p>Teléfono: +504 2200-0000</p>
-          </div>
+        <div class="card card-mision text-center">
+          <h3 class="mision-titulo">Nuestra Misión</h3>
+          
+          <blockquote class="versiculo-box">
+            <p class="versiculo-texto">
+              “Por tanto, id, y haced discípulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Santo; enseñándoles que guarden todas las cosas que os he mandado; y he aquí yo estoy con vosotros todos los días, hasta el fin del mundo. Amén.”
+            </p>
+            <cite class="versiculo-cita">— Mateo 28:18-20</cite>
+          </blockquote>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Iglesia de Dios Pentecostal M.I. Honduras. Todos los derechos reservados.</p>[cite: 1]
     </div>
   </footer>
 
