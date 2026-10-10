@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap');
 
+/* ===================================================
+   VARIABLES GLOBALES Y RESET
+   =================================================== */
 :root {
   --red-main: #D92525;
   --red-hover: #B71C1C;
   --dark-header: #1A1A1A;
   --dark-bg: #111111;
-  --bg-light: #F9F9F9;
+  --bg-light: #F8FAFC;
   --text-dark: #222222;
-  --text-muted: #666666;
-  --border-light: #E5E5E5;
+  --text-muted: #64748B;
+  --border-light: #E2E8F0;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 * {
@@ -30,14 +35,25 @@ body {
   padding: 0 24px;
 }
 
-/* 1. ENCABEZADO SUPERIOR BLANCO */
+.section-padding {
+  padding: 60px 0;
+}
+
+.text-center { 
+  text-align: center; 
+}
+
+/* ===================================================
+   1. ENCABEZADO SUPERIOR BLANCO (HEADER PRINCIPAL)
+   =================================================== */
 .header-principal {
   background-color: #FFFFFF;
   border-bottom: 1px solid var(--border-light);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 15px 0;
+  padding: 14px 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .header-container {
@@ -50,7 +66,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 12px;
+  gap: 14px;
 }
 
 .logo-img {
@@ -71,6 +87,7 @@ body {
   font-size: 1.15rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .subtitulo-organizacion {
@@ -84,7 +101,7 @@ body {
 .nav-menu ul {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 28px;
 }
 
 .nav-menu a {
@@ -95,29 +112,31 @@ body {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  padding-bottom: 4px;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
   color: var(--red-main);
+  border-bottom: 2px solid var(--red-main);
 }
 
-/* 2. PORTADA BAYSIDE STYLE CON CAPENSI.JPG DE FONDO */
+/* ===================================================
+   2. PORTADA BAYSIDE STYLE (INDEX.HTML)
+   =================================================== */
 .hero-bayside {
   position: relative;
-  min-height: 85vh;
+  min-height: 80vh;
   background-image: url('capensi.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #FFFFFF;
-  overflow: hidden;
 }
 
 .hero-overlay {
@@ -142,14 +161,13 @@ body {
   margin: 0 auto;
 }
 
-/* Recuadro Blanco de Título "BIENVENIDOS" */
 .frame-box {
   display: inline-block;
   border: 3px solid #FFFFFF;
-  padding: 18px 45px;
+  padding: 16px 45px;
   margin-bottom: 25px;
-  background-color: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
 }
 
 .frame-box h1 {
@@ -163,115 +181,264 @@ body {
   line-height: 1;
 }
 
-/* Estilo del Versículo */
 .versiculo-hero {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.8;
   color: #F8FAFC;
   font-style: italic;
   font-weight: 400;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
-  max-width: 850px;
-  margin: 0 auto 30px auto;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .cita-hero {
   display: block;
-  margin-top: 8px;
+  margin-top: 12px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #FFFFFF;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.05rem;
   letter-spacing: 1px;
 }
 
-/* Botones de Acción de la Portada */
-.hero-action-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-hero {
-  padding: 12px 28px;
+/* ===================================================
+   3. SECCIÓN IDENTIDAD Y VALORES (NOSOTROS.HTML)
+   =================================================== */
+.titulo-seccion-pagina {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.85rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark-header);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.subtitulo-seccion-pagina {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.grid-identidad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.card-identidad {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--red-main);
+  border-radius: 6px;
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-identidad:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-identidad h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
   font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 1px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  color: var(--dark-header);
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
-.btn-secondary {
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-  background: transparent;
+/* CUADRÍCULA LIMPIA DE VALORES (SOLO TÍTULOS) */
+.grid-valores-solos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
 }
 
-.btn-secondary:hover {
-  background-color: #FFFFFF;
-  color: var(--dark-header);
-}
-
-.btn-primary {
-  background-color: var(--red-main);
-  color: #FFFFFF;
-  border: 2px solid var(--red-main);
-}
-
-.btn-primary:hover {
-  background-color: var(--red-hover);
-  border-color: var(--red-hover);
-}
-
-/* Barra Inferior Transmisión / En vivo */
-.hero-bottom-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(26, 26, 26, 0.92);
-  padding: 14px 20px;
-  z-index: 2;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.live-link {
-  color: #FFFFFF;
-  text-decoration: none;
+.card-valor-simple {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--red-main);
+  padding: 16px;
+  text-align: center;
+  border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: opacity 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark-header);
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
 
-.live-link:hover {
-  opacity: 0.85;
+.card-valor-simple:hover {
+  background-color: #FFFFFF;
+  border-color: var(--red-main);
+  box-shadow: var(--shadow-sm);
 }
 
-.play-icon {
-  display: inline-flex;
+/* ===================================================
+   4. SECCIÓN LIDERAZGO (DIRECTIVA.HTML)
+   =================================================== */
+.grid-liderazgo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card-lider {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.card-lider:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.foto-lider {
+  width: 130px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #E2E8F0;
+  border: 1px solid var(--border-light);
+}
+
+.nombre-lider {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-header);
+  margin-bottom: 4px;
+}
+
+.cargo-lider {
+  font-size: 0.82rem;
+  color: var(--red-main);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ===================================================
+   5. SECCIÓN CONTACTO (CONTACTO.HTML)
+   =================================================== */
+.contacto-card-oficina {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-top: 5px solid var(--red-main);
+  border-radius: 6px;
+  padding: 40px 35px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.titulo-contacto {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-header);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.horario-contacto {
+  color: var(--red-main);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.lista-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.item-contacto {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  border: 2px solid #FFFFFF;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.item-contacto:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.icono-contacto {
+  font-size: 1.3rem;
+  width: 42px;
+  height: 42px;
+  background-color: var(--bg-light);
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  font-size: 0.7rem;
-  padding-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-/* Responsive para Celulares */
+.item-contacto h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.enlace-contacto {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--dark-header);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.enlace-contacto:hover {
+  color: var(--red-main);
+}
+
+/* ===================================================
+   6. PIE DE PÁGINA (FOOTER)
+   =================================================== */
+footer {
+  background-color: var(--dark-header);
+  color: #94A3B8;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 60px;
+  font-size: 0.85rem;
+  border-top: 1px solid #2A2A2A;
+}
+
+/* ===================================================
+   RESPONSIVO PARA MOVILES
+   =================================================== */
 @media (max-width: 768px) {
-  .hero-bayside {
-    min-height: 75vh;
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .frame-box {
@@ -280,22 +447,14 @@ body {
 
   .frame-box h1 {
     font-size: 1.8rem;
-    letter-spacing: 2px;
   }
 
   .versiculo-hero {
     font-size: 0.95rem;
-    margin-bottom: 20px;
+    line-height: 1.6;
   }
 
-  .hero-action-buttons {
-    flex-direction: column;
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-  }
-
-  .btn-hero {
-    width: 100%;
+  .grid-valores-solos {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 }
