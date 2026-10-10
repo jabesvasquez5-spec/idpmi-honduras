@@ -11,8 +11,7 @@
   --border-light: #E5E5E5;
 }
 
-/* Corregido selector universal */
-* {
+- {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -194,20 +193,26 @@ body {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 
-/* 3. NUEVO FOOTER Y DERECHOS RESERVADOS (REEMPLAZA LA FRANJA ROJA) */
-.footer-nacional {
-  background-color: var(--dark-header);
+/* 3. FRANJA ROJA DESTACADA */
+.franja-roja {
+  background-color: var(--red-main);
   color: #FFFFFF;
-  padding-top: 50px;
-  margin-top: 60px;
-  border-top: 3px solid var(--red-main);
+  padding: 35px 0;
 }
 
 .grid-franja {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding-bottom: 40px;
+  gap: 20px;
+}
+
+.col-franja {
+  padding: 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.col-franja:last-child {
+  border-right: none;
 }
 
 .col-franja h3 {
@@ -215,29 +220,14 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: 1px;
-  color: var(--red-main); /* Rojo destacado para los títulos */
 }
 
 .col-franja p {
   font-size: 0.9rem;
-  color: #CCCCCC;
-  line-height: 1.6;
-}
-
-/* FRANJA INFERIOR DE DERECHOS RESERVADOS */
-.footer-derechos {
-  background-color: var(--dark-bg);
-  border-top: 1px solid #2D2D2D;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer-derechos p {
-  color: #888888;
-  font-size: 0.85rem;
-  margin: 0;
+  opacity: 0.95;
+  line-height: 1.5;
 }
 
 /* 4. SECCIONES Y TARJETAS GENERALES */
@@ -267,4 +257,166 @@ body {
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-
+  margin-bottom: 15px;
+}
+
+/* 5. VALORES SEPARADOS INDIVIDUALMENTE */
+.grid-valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card-valor {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--red-main);
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.card-valor:hover {
+  transform: translateY(-4px);
+}
+
+.card-valor h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-header);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card-valor p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* 6. LIDERAZGO / COMITÉ EJECUTIVO */
+.grid-liderazgo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card-lider {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.card-lider:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.foto-lider {
+  width: 120px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  background-color: #E2E8F0;
+  border: 1px solid var(--border-light);
+}
+
+.nombre-lider {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark-header);
+  margin-bottom: 4px;
+}
+
+.cargo-lider {
+  font-size: 0.8rem;
+  color: var(--red-main);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* CONTACTO Y BANCOS */
+.card-banco {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--red-main);
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.numero-cuenta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--dark-header);
+  margin-top: 5px;
+}
+
+/* FOOTER Y DERECHOS RESERVADOS */
+footer {
+  background-color: var(--dark-header);
+  color: #888888;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 80px;
+  font-size: 0.85rem;
+}
+
+.footer-derechos {
+  background-color: var(--dark-bg);
+  border-top: 1px solid #2D2D2D;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-derechos p {
+  color: #888888;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* RESPONSIVO PARA CELULARES */
+@media (max-width: 768px) {
+  .hero-bayside {
+    min-height: 60vh;
+  }
+  
+  .frame-box {
+    padding: 12px 20px;
+    border-width: 3px;
+  }
+  
+  .frame-box h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .versiculo-hero {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .col-franja {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .col-franja:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
