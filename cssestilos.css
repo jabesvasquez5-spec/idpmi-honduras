@@ -125,17 +125,11 @@ body {
 /* ===================================================
    2. PORTADA BAYSIDE STYLE (INDEX.HTML)
    =================================================== */
-
-
-/* ===================================================
-   ESTILOS EXCLUSIVOS PARA PORTADA (INDEX.HTML)
-   =================================================== */
-
 /* Contenedor principal de la portada unido al pie de página */
 .hero-bayside {
   position: relative;
   min-height: calc(100vh - 130px);
-  background-image: url('capensi.jpg');
+  background-image: url(video-portada.mp4);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
