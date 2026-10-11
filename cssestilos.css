@@ -647,75 +647,48 @@ footer {
    REGLAS GLOBALES Y RESPONSIVAS (MOBILE & DESKTOP)
    =================================================== */
 
-/* Asegura que las imágenes y videos no sobresalgan en pantallas pequeñas */
-img, video {
-  max-width: 100%;
-  height: auto;
-}
+/* ===================================================
+   MENÚ HORIZONTAL COMPACTO PARA TELÉFONOS
+   =================================================== */
 
-/* Ajustes adaptativos para celulares y tablets (pantallas hasta 768px) */
 @media (max-width: 768px) {
 
-  /* 1. Header y Menú */
+  /* Ajuste general del contenedor del header */
   .header-container {
     flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    padding: 15px 10px;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
     gap: 10px;
   }
 
-  /* 2. Portada (Index con Video) */
-  .hero-bayside {
-    height: auto;
-    min-height: calc(100vh - 60px);
-    padding: 40px 15px;
+  /* Ajuste del logo y texto en móvil */
+  .logo-img {
+    height: 45px; /* Logo un poco más compacto */
   }
 
-  .frame-box-grande {
-    padding: 14px 25px;
-    border-width: 3px;
-    margin-bottom: 20px;
+  .titulo-organizacion {
+    font-size: 0.95rem;
   }
 
-  .frame-box-grande h1 {
-    font-size: 2.2rem; /* Tamaño optimizado para pantalla de celular */
-    letter-spacing: 2px;
+  .subtitulo-organizacion {
+    font-size: 0.75rem;
   }
 
-  .versiculo-bloque {
-    max-width: 100%;
-    padding: 0 10px;
+  /* Menú de navegación completamente HORIZONTAL */
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row; /* Fuerza el alineamiento horizontal */
+    justify-content: center;
+    flex-wrap: wrap; /* Si el espacio es muy ajustado, se acomodan limpiamente */
+    gap: 12px 18px; /* Espaciado entre botones */
+    padding: 0;
+    margin: 5px 0 0 0;
   }
 
-  .texto-versiculo {
-    font-size: 0.95rem; /* Lectura cómoda en móviles */
-    line-height: 1.5;
-  }
-
-  .cita-versiculo {
-    font-size: 0.9rem;
-  }
-
-  /* 3. Secciones en Grillas (Nosotros, Directiva y Contacto) */
-  .grid-identidad,
-  .grid-valores-cuadros,
-  .bloque-contacto {
-    grid-template-columns: 1fr !important; /* Coloca una sola tarjeta por fila en celular */
-    gap: 15px;
-  }
-
-  .filas-contacto {
-    flex-direction: column;
-    text-align: center;
-    padding: 18px 15px;
-  }
-
-  .datos-contacto {
-    text-align: center;
+  .nav-menu li a {
+    font-size: 0.8rem; /* Tamaño de letra adecuado para encajar en una fila */
+    padding: 4px 2px;
+    letter-spacing: 0.5px;
+    white-space: nowrap; /* Evita que el texto de un botón se rompa */
   }
 }
